@@ -1,0 +1,54 @@
+body {
+    color: #999;
+}
+
+.game-title {
+    font-family: fantasy;
+    font-style: oblique;
+    font-size: 3rem;
+    color: #000;
+    text-align: center;
+}
+
+.game-container {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.game-statistics {
+    text-align: center;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1rem;
+    color: #000;
+}
+
+.board {
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    border: 1px solid white;
+    background: #fff;
+    cursor: url(/src/img/tor.png), url(/src/img/tor.svg), url(/src/img/tor.jpg), auto;
+}
+
+.cell {
+    width: calc(25% - 5px);
+    aspect-ratio: 1/1;
+    margin: 5px 0;
+    background: rgb(119, 121, 120);
+    border-radius: 50%;
+}
+
+.cell-with-goblin {
+    background-image: url(/src/img/goblin.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: brown;
+}
